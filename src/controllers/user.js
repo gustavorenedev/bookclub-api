@@ -80,6 +80,32 @@ class UserController {
             return res.status(400).json({ error: error?.message})
         }
     }
+
+    async getUser(req, res) {
+        try {
+            if(!req.userId){
+                return res.status(400).json({ error: 'id not provided!'});
+            }
+
+            const user = await User.findOne({ where: { id: Number(req.userId) } });
+
+            if (!user) {
+                return res.status(404).json({ error: 'user not found.'})
+            }
+
+            return res.json(user);
+        } catch(error) {
+            return res.status(400).json({ error: error?.message})
+        }
+    }
+
+    async forgotPassword(req, res) {
+        try {
+            
+        } catch (error) {
+            
+        }
+    }
 }
 
 export default new UserController();
