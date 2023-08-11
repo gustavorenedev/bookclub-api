@@ -12,7 +12,7 @@ class Mail {
                 Messages: [
                     {
                         From: {
-                            Email: "renegustavo8@gmail.com",
+                            Email: "renegustavo42@gmail.com",
                             Name: "Gustavo"
                           },
                           To: [
@@ -21,7 +21,7 @@ class Mail {
                               Name: name,
                             }
                           ],
-                          TemplateID: 5010409,
+                          TemplateID: 5006950,
                           TemplateLanguage: true,
                           Subject: "Alteração de senha",
                           Variables: {
